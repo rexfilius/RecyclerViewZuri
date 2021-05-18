@@ -3,7 +3,7 @@ package com.github.rexfilius.recyclerviewzuri.contactList
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.rexfilius.recyclerviewzuri.databinding.ActivityContactListItemBinding
+import com.github.rexfilius.recyclerviewzuri.databinding.ContactListItemBinding
 
 class ContactListAdapter : RecyclerView.Adapter<ContactListAdapter.ContactListViewHolder>() {
 
@@ -11,7 +11,7 @@ class ContactListAdapter : RecyclerView.Adapter<ContactListAdapter.ContactListVi
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactListViewHolder {
         return ContactListViewHolder(
-            ActivityContactListItemBinding.inflate(
+            ContactListItemBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
             )
         )
@@ -31,12 +31,12 @@ class ContactListAdapter : RecyclerView.Adapter<ContactListAdapter.ContactListVi
         notifyDataSetChanged()
     }
 
-    inner class ContactListViewHolder(private val binding: ActivityContactListItemBinding) :
+    inner class ContactListViewHolder(private val binding: ContactListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(contact: ContactModel) {
-            binding.activityContactListItemName.text = contact.name
-            binding.activityContactListItemPhone.text = contact.number
+            binding.contactListItemName.text = contact.name
+            binding.contactListItemPhone.text = contact.number
         }
 
     }

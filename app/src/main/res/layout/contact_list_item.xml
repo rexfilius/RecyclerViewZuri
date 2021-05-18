@@ -7,7 +7,7 @@
     android:padding="8dp">
 
     <TextView
-        android:id="@+id/activityContactListItemName"
+        android:id="@+id/contactListItemName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -22,7 +22,7 @@
         tools:text="John Doe" />
 
     <TextView
-        android:id="@+id/activityContactListItemPhone"
+        android:id="@+id/contactListItemPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activityContactListItemName"
+        app:layout_constraintTop_toBottomOf="@+id/contactListItemName"
         tools:text="09011223344" />
 
     <View
@@ -44,6 +44,6 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/activityContactListItemPhone"
+        app:layout_constraintTop_toBottomOf="@id/contactListItemPhone"
         tools:layout_editor_absoluteY="98dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

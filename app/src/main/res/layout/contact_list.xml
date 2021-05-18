@@ -8,17 +8,17 @@
     tools:context=".contactList.ContactListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/activityContactListRecyclerView"
+        android:id="@+id/contactListRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/activity_contact_list_item" />
+        tools:listitem="@layout/contact_list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/activityContactListFAB"
+        android:id="@+id/contactListFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
