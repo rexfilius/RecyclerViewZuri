@@ -1,23 +1,21 @@
 package com.github.rexfilius.recyclerviewzuri.contactList
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.rexfilius.recyclerviewzuri.R
 import com.github.rexfilius.recyclerviewzuri.contactCategory.CATEGORY_NAME_EXTRAS
-import com.github.rexfilius.recyclerviewzuri.contactCategory.MainActivity
-import com.github.rexfilius.recyclerviewzuri.databinding.ActivityContactListBinding
+import com.github.rexfilius.recyclerviewzuri.databinding.ContactListBinding
 import com.github.rexfilius.recyclerviewzuri.databinding.DialogAddContactBinding
 
 class ContactListActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityContactListBinding
+    lateinit var binding: ContactListBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityContactListBinding.inflate(layoutInflater)
+        binding = ContactListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Appbar title
@@ -28,15 +26,15 @@ class ContactListActivity : AppCompatActivity() {
 
     private fun setupAdapterAndDialog() {
         val contactListAdapter = ContactListAdapter()
-        binding.activityContactListRecyclerView.adapter = contactListAdapter
-        binding.activityContactListRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.contactListRecyclerView.adapter = contactListAdapter
+        binding.contactListRecyclerView.layoutManager = LinearLayoutManager(this)
 
         val alertDialogBuilder = AlertDialog.Builder(this)
         val dialogBinding = DialogAddContactBinding.inflate(LayoutInflater.from(this))
         alertDialogBuilder.setView(dialogBinding.root)
 
         val alertDialog = alertDialogBuilder.create()
-        binding.activityContactListFAB.setOnClickListener { alertDialog.show() }
+        binding.contactListFAB.setOnClickListener { alertDialog.show() }
 
         dialogBinding.dialogContactSave.setOnClickListener {
             val contact = ContactModel(
