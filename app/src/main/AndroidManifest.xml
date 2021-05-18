@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewZuri">
-        <activity android:name=".contactList.ContactListActivity"></activity>
-        <activity android:name=".contactCategory.MainActivity">
+        <activity android:name=".login.LoginActivity"></activity>
+        <activity android:name=".signup.SignupActivity" />
+        <activity android:name=".contactList.ContactListActivity" />
+        <activity android:name=".contactCategory.ContactCategoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

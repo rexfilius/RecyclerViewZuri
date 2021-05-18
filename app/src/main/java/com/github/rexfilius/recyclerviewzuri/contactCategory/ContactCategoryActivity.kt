@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.github.rexfilius.recyclerviewzuri.contactList.ContactListActivity
 import com.github.rexfilius.recyclerviewzuri.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class ContactCategoryActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 

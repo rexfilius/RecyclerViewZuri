@@ -5,9 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.rexfilius.recyclerviewzuri.R
 import com.github.rexfilius.recyclerviewzuri.contactCategory.CATEGORY_NAME_EXTRAS
-import com.github.rexfilius.recyclerviewzuri.contactCategory.MainActivity
 import com.github.rexfilius.recyclerviewzuri.databinding.ActivityContactListBinding
 import com.github.rexfilius.recyclerviewzuri.databinding.DialogAddContactBinding
 
