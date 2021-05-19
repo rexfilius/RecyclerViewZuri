@@ -10,15 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewZuri">
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".signup.SignupActivity" />
-        <activity android:name=".contactList.ContactListActivity" />
-        <activity android:name=".contactCategory.ContactCategoryActivity">
+        <activity android:name=".signup.SignupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".contactList.ContactListActivity" />
+        <activity android:name=".contactCategory.ContactCategoryActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
