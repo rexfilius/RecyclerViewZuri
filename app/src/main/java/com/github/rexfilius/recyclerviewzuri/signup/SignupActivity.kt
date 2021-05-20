@@ -48,6 +48,7 @@ class SignupActivity : AppCompatActivity() {
     private fun gotoLoginActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun toast(text: String) {
